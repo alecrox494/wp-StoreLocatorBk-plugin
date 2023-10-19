@@ -19,12 +19,6 @@ Version: 1.0
 //     return;
 // }
 
-function insert_table()
-{
-    //INSERT INTO `wp_sl_stores` (`ID`, `address`, `bookable`, `countryIso`, `email`, `hasPickupInStore`, `hasTailorBooking`, `lat`, `lng`) VALUES ('55708', '2 Davies Street', '0', 'IT', 'stores.milan@stores.com', '0', '0', '45.4668609', '9.1738406');
-}
-
-
 add_action('rest_api_init', function () {
     register_rest_route('storelocator/v1', '/stores/', array(
         'methods' => 'GET',
